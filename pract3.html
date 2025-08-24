@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Practical - Cursor Demo</title>
+
+  <!-- Internal CSS -->
+  <style>
+    /* ID selector */
+    #header {
+      color: blue;
+      text-align: center;
+      background-image: url('bg.jpg');
+      background-repeat: no-repeat;
+      padding: 20px;
+    }
+
+    /* Class selector */
+    .highlight {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Cursor styles */
+    .pointer { cursor: pointer; }
+    .help    { cursor: help; }        /* usually a question mark */
+    .wait    { cursor: wait; }        /* loading/wait symbol */
+    .not-allowed { cursor: not-allowed; } /* error/stop sign */
+    .crosshair { cursor: crosshair; }
+    .move { cursor: move; }
+  </style>
+</head>
+<body style="background-color: #f5f5f5;"> <!-- Inline CSS -->
+
+  <!-- ID selector -->
+  <h1 id="header">Welcome to CSS Lab</h1>
+
+  <!-- Class selector -->
+  <p class="highlight">This paragraph uses a class selector.</p>
+
+  <!-- Cursor demo -->
+  <h2>Cursor Examples:</h2>
+  <ul>
+    <li class="help">Hover me for Question Mark (?) cursor</li>
+    <li class="wait">Hover me for Loading/Wait cursor</li>
+    <li class="not-allowed">Hover me for Error/Stop cursor</li>
+    <li class="pointer">Hover me for Pointer/Hand cursor</li>
+    <li class="crosshair">Hover me for Crosshair cursor</li>
+    <li class="move">Hover me for Move cursor</li>
+  </ul>
+
+</body>
+</html>
